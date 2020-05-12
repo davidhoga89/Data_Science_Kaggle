@@ -1,11 +1,13 @@
 import pandas as pd
 import numpy as np
 import seaborn as sns
-from mathplotlib import pyplot
+import matplotlib.pyplot as plt
 import os
 import joblib
 
 from sklearn import preprocessing
 from sklearn import metrics
 
-df = open_csv("sales_train.csv")
+df = pd.read_csv("../sales_train.csv")
+print(df.head(10))
+df.describe()
